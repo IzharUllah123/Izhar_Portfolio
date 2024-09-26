@@ -2,15 +2,27 @@ import { useContext, useState } from "react";
 import { ThemeContext } from "../App";
 import { FaMoon } from "react-icons/fa";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { useNavigate } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
+import { GrProjects } from "react-icons/gr";
+import { MdContactMail } from "react-icons/md";
+
+
 
 function Header() {
     const { theme, toggle } = useContext(ThemeContext);
     const [humbrgr, setHmbrgr] = useState(false);
+    const navigate = useNavigate();
     
     const show = () => {
         setHmbrgr(!humbrgr);
     };
 
+    const handleMenuClick = (path) => {
+        setHmbrgr(false); // Close the hamburger menu
+        navigate(path);   // Navigate to the clicked path
+    };
     return (
         <>
             <div className={`flex flex-col sticky top-0`}>
@@ -32,10 +44,10 @@ function Header() {
                     {/* Navigation links for large screens */}
                     <div className="hidden lg:flex lg:items-center">
                         <ul className="flex justify-evenly mt-0">
-                            <li className="mx-5"><Link to="/">Home</Link></li>
-                            <li className="mx-5"><Link to="/expertise">Skill & Expertise</Link></li>
-                            <li className="mx-5"><Link to="/projects">Projects</Link></li>
-                            <li className="mx-5"><Link to="/contact">Contact</Link></li>
+                            <li className="mx-5 underline-hover"><Link to="/">Home</Link></li>
+                            <li className="mx-5 underline-hover"><Link to="/expertise">Skill & Expertise</Link></li>
+                            <li className="mx-5 underline-hover"><Link to="/projects">Projects</Link></li>
+                            <li className="mx-5 underline-hover"><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
 
@@ -50,12 +62,33 @@ function Header() {
                 {/* Mobile Menu - only show when humbrgr is true */}
                 {humbrgr && (
                     <div className={`lg:hidden ${theme ? 'bg-[#0e0e1a] text-white h-screen w-32' : 'bg-gray-200 text-black h-screen w-32'}`}>
-                        <ul className="flex flex-col items-start px-4">
-                            <li className="py-2"><Link to="/">Home</Link></li>
-                            <li className="py-2"><Link to="/expertise">Skill & Expertise</Link></li>
-                            <li className="py-2"><Link to="/projects">Projects</Link></li>
-                            <li className="py-2"><Link to="/contact">Contact</Link></li>
-                        </ul>
+                       <ul className="flex flex-col items-start px-4">
+            <li className="py-2 " onClick={() => handleMenuClick("/")}>
+                <Link to="/"><span className="flex items-center "><p className="mx-2">Home</p> <FaHome /></span></Link>
+            </li>
+            <li className="py-2" onClick={() => handleMenuClick("/expertise")}>
+                <Link to="/expertise"> 
+                <span className="flex items-center"><p className="mx-2">Expertise</p> <GiSkills /></span>
+                
+                </Link>
+            </li>
+           
+
+            <li className="py-2" onClick={() => handleMenuClick("/projects")}>
+                <Link to="/projects">
+                <span className="flex items-center"><p className="mx-2">Projects</p>  <GrProjects /></span>
+                </Link>
+            </li>
+
+
+            
+            <li className="py-2" onClick={() => handleMenuClick("/contact")}>
+                <Link to="/contact">
+                <span className="flex items-center"><p className="mx-2">Contact</p>  <MdContactMail /></span>
+                
+                </Link>
+            </li>
+        </ul>
                     </div>
                 )}
             </div>

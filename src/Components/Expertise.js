@@ -9,7 +9,7 @@ function Expertise(){
     <div className="flex w-full flex-col">
         <div className="flex flex-col w-[70%] mx-auto">
               <h1 className="font-semibold mx-auto mt-8">Skill & Experties</h1>
-              <p className="mt-6">I have over a year of experience in front-end development, working with HTML, CSS,
+              <p className="mt-6 text-center">I have over a year of experience in front-end development, working with HTML, CSS,
              Tailwind CSS, and React.js. In addition, I have six months of experience in backend 
              development using Node.js (Express.js) and MongoDB, and another 
              six months in machine learning, allowing me to build and integrate 
@@ -32,7 +32,7 @@ function Expertise(){
               <div className="flex flex-col p-3 w-full">
                <h3 className="font-semibold mx-auto text-gray-500">Front End Development</h3>
 
-                <div className="flex mt-3 text-center mx-auto">
+                <div className="flex mt-3 text-center mx-auto mr-2">
                     <div className="flex flex-col mx-3">
                         <div className="mx-auto text-5xl mb-1">< FaHtml5 /></div>
                          <span> HTML</span>

@@ -29,8 +29,8 @@ function Hero() {
 
           <div className="flex mt-6 font-semibold text-sm flex-col">
             <div>
-              <a href="12.pdf"
-              download={"Recume.pdf"}>
+              <a href="Izhar_CV.pdf"
+              download={"Resume.pdf"}>
               <button
                 className="bg-gray-900 text-gray-200 mx-3 rounded-lg p-2 border border-gray-900
                         hover:bg-slate-200 hover:text-gray-900"

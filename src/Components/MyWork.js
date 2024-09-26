@@ -1,7 +1,7 @@
 const MyWork=[
     {
       id:1,
-      name:"Styleloft",
+      name:"luxury",
      image:"/luxury.png",
       category:"React",
       technology:"REACT +  CSS",
@@ -15,14 +15,14 @@ const MyWork=[
         image:"/fasion.png",
         category:"React",
         technology:"REACT + TAILWIND CSS",
-        description:"ShopEase is your go-to platform for a seamless and convenient online shopping experience. Discover a wide range of products, curated for quality "
+        description:"ShopEase is your go-to platform for a seamless and convenient online shopping experience. Wide selection,delivery."
         ,live:"https://shop-ease-psi.vercel.app/"  ,
         git:"https://github.com/IzharUllah123/ShopEase"
         
       },
       {
         id:3,
-        name:"Styleloft",
+        name:"weather",
         image:"/weather.png",
         category:"React",
         technology:"REACT +  CSS",
@@ -32,7 +32,7 @@ const MyWork=[
       },
       {
         id:4,
-        name:"Styleloft",
+        name:"health",
         image:"/health.png",
         category:"Full Stack",
         technology:"REACT + NODE JS+ MONGODB",
@@ -52,7 +52,7 @@ const MyWork=[
       },
       {
         id:6,
-        name:"Styleloft",
+        name:"ML",
         image:"/ML.png",
         category:"ML",
         technology:"REACT + CSS + Python  ",
