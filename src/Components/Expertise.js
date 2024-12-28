@@ -1,123 +1,89 @@
-import { FaReact, FaHtml5 ,FaCss3, FaNode, FaMagento, FaPython } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3, FaNode, FaPython } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
-import { SiPandas,SiNumpy,SiScikitlearn } from "react-icons/si";
+import { SiPandas, SiNumpy, SiScikitlearn } from "react-icons/si";
 
+function Expertise() {
+  return (
+    <div className="flex flex-col items-center w-full px-6 py-10 bg-gray-50">
+      {/* Header Section */}
+      <div className="text-center max-w-4xl">
+        <h1 className="font-bold text-3xl text-gray-800">Skill & Expertise</h1>
+        <p className="mt-6 text-gray-600 text-lg leading-relaxed">
+          I have over a year of experience in front-end development, working
+          with HTML, CSS, Tailwind CSS, and React.js. In addition, I have six
+          months of experience in backend development using Node.js (Express.js)
+          and MongoDB, and another six months in machine learning, allowing me
+          to build and integrate full-stack applications effectively.
+        </p>
+      </div>
 
-function Expertise(){
-    return(<>
-    <div className="flex w-full flex-col">
-        <div className="flex flex-col w-[70%] mx-auto">
-              <h1 className="font-semibold mx-auto mt-8">Skill & Experties</h1>
-              <p className="mt-6 text-center">I have over a year of experience in front-end development, working with HTML, CSS,
-             Tailwind CSS, and React.js. In addition, I have six months of experience in backend 
-             development using Node.js (Express.js) and MongoDB, and another 
-             six months in machine learning, allowing me to build and integrate 
-             full-stack applications effectively.
-             </p>
-           
-         </div>
-
-         <div>
-          
-           <div className="flex mt-6 font-semibold">
-                <h2 className="mx-auto">Core Competencies</h2>
-
-           </div>
-
-
-    <div className="flex flex-wrap justify-center mt-3 w-full">
-            <div className="flex flex-col items-center  p-2 text-sm w-full xs:mb-6  xs:w-[75%]  md:w-1/3 lg:w-1/4 mx-4 mb-4">
-             
-              <div className="flex flex-col p-3 w-full">
-               <h3 className="font-semibold mx-auto text-gray-500">Front End Development</h3>
-
-                <div className="flex mt-3 text-center mx-auto mr-2">
-                    <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1">< FaHtml5 /></div>
-                         <span> HTML</span>
-                    </div>
-
-                    <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1">  <FaCss3 /></div>
-                         <span>    CSS</span>
-                    </div>
-
-                    <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1"> <RiTailwindCssFill /> </div>
-                         <span> Tailwind CSS</span>
-                    </div>
-                 
-                    <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1"> <FaReact /> </div>
-                         <span>  React.js </span>
-                    </div>                             
-                </div>
-                
-              </div>
+      {/* Core Competencies Section */}
+      <h2 className="font-semibold text-2xl text-gray-700 mt-12">Core Competencies</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full max-w-6xl">
+        {/* Frontend Development */}
+        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center transition hover:scale-105">
+          <h3 className="font-semibold text-lg text-gray-700 mb-4">Frontend Development</h3>
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-col items-center">
+              <FaHtml5 className="text-5xl text-orange-500" />
+              <span className="mt-2 text-gray-600">HTML</span>
             </div>
-           
-           
-            <div className="flex flex-col items-center p-2 text-sm w-full xs:mb-6  xs:w-[75%]  md:w-1/3 lg:w-1/4 mx-4 mb-4">
-             
-            <div className="flex flex-col p-3 w-full ">
-              <h3 className="font-semibold mx-auto text-gray-500">Back End Development</h3>
-              <div className="mt-3 flex text-center mx-auto">
-                
-              <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1"> <FaNode /> </div>
-                         <span>   Node.js (Express.js) </span>
-                    </div>
-                
-
-                    <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1"> <DiMongodb /> </div>
-                         <span>   MongoDB </span>
-                    </div>
-                
-                
-              
-              </div>
+            <div className="flex flex-col items-center">
+              <FaCss3 className="text-5xl text-blue-500" />
+              <span className="mt-2 text-gray-600">CSS</span>
             </div>
-           </div>
-
-         
-            <div className="flex flex-col items-center p-2 text-sm w-full xs:w-[75%]  md:w-1/3 lg:w-1/4 mx-4 mb-4">
-            <div className="flex flex-col p-3 w-full ">
-              <h3 className="font-semibold mx-auto text-gray-500">Machine Learning Dev</h3>
-              <div className="mt-3 flex text-center mx-auto">
-
-
-              <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1"> <FaPython /> </div>
-                         <span>      Python </span>
-                    </div>
-
-                    <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1"> <SiPandas /> </div>
-                         <span>      Pandas </span>
-                    </div>
-
-                    <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1">   <SiNumpy /> </div>
-                         <span>        Numpy </span>
-                    </div>
-
-                    <div className="flex flex-col mx-3">
-                        <div className="mx-auto text-5xl mb-1"> <SiScikitlearn /> </div>
-                         <span>      Scikit-Learn </span>
-                    </div>
-
-
-                  
-             
-              </div>
-              </div>
+            <div className="flex flex-col items-center">
+              <RiTailwindCssFill className="text-5xl text-teal-500" />
+              <span className="mt-2 text-gray-600">Tailwind CSS</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaReact className="text-5xl text-blue-400" />
+              <span className="mt-2 text-gray-600">React.js</span>
             </div>
           </div>
-         </div>
+        </div>
+
+        {/* Backend Development */}
+        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center transition hover:scale-105">
+          <h3 className="font-semibold text-lg text-gray-700 mb-4">Backend Development</h3>
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-col items-center">
+              <FaNode className="text-5xl text-green-500" />
+              <span className="mt-2 text-gray-600">Node.js</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <DiMongodb className="text-5xl text-green-700" />
+              <span className="mt-2 text-gray-600">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Machine Learning */}
+        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center transition hover:scale-105">
+          <h3 className="font-semibold text-lg text-gray-700 mb-4">Machine Learning</h3>
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-col items-center">
+              <FaPython className="text-5xl text-yellow-500" />
+              <span className="mt-2 text-gray-600">Python</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiPandas className="text-5xl text-blue-400" />
+              <span className="mt-2 text-gray-600">Pandas</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiNumpy className="text-5xl text-gray-600" />
+              <span className="mt-2 text-gray-600">NumPy</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiScikitlearn className="text-5xl text-orange-500" />
+              <span className="mt-2 text-gray-600">Scikit-Learn</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    </>)
+  );
 }
+
 export default Expertise;
