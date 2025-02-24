@@ -13,14 +13,14 @@ function Hero() {
           <h2
             className={`font-semibold text-gray-500 text-[20px] mt-3 xs:w-[65%] xs:text-center`}
           >
-            Web & Machine Learning Developer
+            Web Developer
           </h2>
 
           <p
             className="mt-3 lg:w-[70%] lg:text-center md:text-left md:w-[80%] sm:text-left sm:w-[80%] 
                     xs:w-[85%] xs:text-center"
           >
-            As a Web & Machine Learning Developer, I bring together the art of
+            As a Web Developer, I bring together the art of
             coding with the science of data to create intuitive, intelligent
             digital experiences. My expertise in Tailwind CSS, React.js, Node.js,
             Express.js, MongoDB, Python including powerful libraries like Pandas,
